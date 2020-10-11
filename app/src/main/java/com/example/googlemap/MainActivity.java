@@ -23,9 +23,15 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+<<<<<<< Updated upstream
 import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
 
+=======
+import android.widget.Toast;
+
+import androidx.fragment.app.FragmentActivity;
+>>>>>>> Stashed changes
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback {
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
@@ -63,7 +69,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("I am here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+<<<<<<< Updated upstream
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17));
+=======
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
+>>>>>>> Stashed changes
         googleMap.addMarker(markerOptions);
     }
     @Override
