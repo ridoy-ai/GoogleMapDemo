@@ -32,11 +32,6 @@ import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
 
 
-import android.widget.Toast;
-
-import androidx.fragment.app.FragmentActivity;
-
-
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
