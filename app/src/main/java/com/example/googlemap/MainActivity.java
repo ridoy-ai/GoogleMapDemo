@@ -27,21 +27,20 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
 
-=======
+
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
->>>>>>> Stashed changes
+
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback {
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
-=======
+
 
 import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
@@ -70,10 +69,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private static final int REQUEST_CODE = 101;
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,14 +77,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         fetchLocation();
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
     private void fetchLocation() {
         if (ActivityCompat.checkSelfPermission(
                 this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
@@ -110,24 +99,21 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("I am here!");
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-<<<<<<< Updated upstream
+
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17));
-=======
+
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
->>>>>>> Stashed changes
+
         googleMap.addMarker(markerOptions);
     }
     @Override
-=======
-=======
->>>>>>> Stashed changes
+
 
 
 
@@ -143,8 +129,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         googleMap.addMarker(markerOptions);
     }
 
-<<<<<<< Updated upstream
-=======
+
     @Override
     public void onLocationChanged(Location location) {
         Location mLastLocation = null;
@@ -165,7 +150,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(getApplicationContext(), loc.toString(), Toast.LENGTH_LONG).show();
     }
 
->>>>>>> Stashed changes
+
     @Override
     public void onLocationChanged(Location location) {
         Location mLastLocation = null;
@@ -187,7 +172,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     @Override
->>>>>>> Stashed changes
+
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case REQUEST_CODE:
