@@ -36,25 +36,6 @@ import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
 
-public class MainActivity extends FragmentActivity implements OnMapReadyCallback {
-    Location currentLocation;
-    FusedLocationProviderClient fusedLocationProviderClient;
-    private static final int REQUEST_CODE = 101;
-
-
-import androidx.fragment.app.FragmentActivity;
-import android.widget.Toast;
-
-
-import android.widget.Toast;
-
-import androidx.fragment.app.FragmentActivity;
-
-
-import androidx.fragment.app.FragmentActivity;
-import android.widget.Toast;
-
-
 
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
     Location currentLocation;
@@ -130,26 +111,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(getApplicationContext(), loc.toString(), Toast.LENGTH_LONG).show();
     }
 
-
-    @Override
-    public void onLocationChanged(Location location) {
-        Location mLastLocation = null;
-        // use latitude and longitude given by
-        // location.getLatitude(), location.getLongitude()
-        // for updated location marker
-        Log.d("aaaaaaaa===>", "" + location.getLatitude() + "\n" + location.getLongitude());
-        // displayLocation();
-
-        // to remove old markers
-        GoogleMap googleMa = null;
-        googleMa.clear();
-        final LatLng loc = new LatLng(location.getLongitude(), location.getLongitude());
-
-        Marker ham = googleMa.addMarker(new MarkerOptions().position(loc).title("This is Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.greenpointer)));
-        googleMa.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, 15));
-
-        Toast.makeText(getApplicationContext(), loc.toString(), Toast.LENGTH_LONG).show();
-    }
 
     @Override
 
