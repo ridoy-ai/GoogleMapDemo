@@ -70,6 +70,9 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private static final int REQUEST_CODE = 101;
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +82,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         fetchLocation();
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -104,6 +111,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         });
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     @Override
     public void onMapReady(GoogleMap googleMap) {
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
@@ -118,6 +126,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     }
     @Override
 =======
+=======
+>>>>>>> Stashed changes
 
 
 
