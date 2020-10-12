@@ -108,23 +108,6 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17));
 
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
-
-        googleMap.addMarker(markerOptions);
-    }
-    @Override
-
-
-
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("I am here!");
-        googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17));
-
 
         googleMap.addMarker(markerOptions);
     }
