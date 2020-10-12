@@ -38,11 +38,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     double longitude;
     private Location mLastLocation = null;
-
     String mPermission = android.Manifest.permission.ACCESS_FINE_LOCATION;
-
     private static final int REQUEST_CODE = 101;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
