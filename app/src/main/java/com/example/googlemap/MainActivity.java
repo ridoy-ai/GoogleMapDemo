@@ -27,10 +27,8 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-
 import androidx.fragment.app.FragmentActivity;
 import android.widget.Toast;
-
 
 public class MainActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
     Location currentLocation;
